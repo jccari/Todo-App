@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <head>
+    <meta charset="utf-8">
+    <title>TODO app</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/skeleton.css">  
+  <style>
+
+    .h1{
+
+    }
+    .boton{
+      text-decoration: none;
+      padding: 10px;
+      font-weight: 600;
+      font-size: 20px;
+      color: #ffffff; 
+      background-color:black;
+      border-radius: 6px;
+      border: 2px solid white;
+    }
+    .boton:hover{
+      color: #000000;
+      background-color: #ffffff;
+    }
+  </style>
+  </head>
+      <center>
+          <h1> Crear Tarea </h1>
+          <form action="/create" method="POST">
+            <label for="owner" class="">Asignado</label>
+            <input type="text" id="owner" placeholder="Tu usuario aquí" name="owner">
+            <br>
+            <label for="content" class="">Contenido</label>
+            <input type="text" id ="content" name="content">
+            <br>
+            <label for="status" class="">Estado</label>
+            <select name="status" id="status">
+                <option value="Creado">Creado</option>
+                <option value="En Proceso">En Proceso</option>
+                <option value="Terminado">Terminado</option>
+            </select>
+            <br>
+            <button type="submit" class="boton">Submit</button>
+          </form>
+          </center>
+</body>
+</html>
